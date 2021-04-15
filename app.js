@@ -54,6 +54,11 @@ class UI {
         document.querySelector('#author').value = '';
         document.querySelector('#isbn').value = '';
     }
+
+    static showAlert(message, className) {
+        const div = document.createElement('div');
+        div.className = `alert alert-${className}`;
+    }
 }
 
 // Store Class: Handles Storage
