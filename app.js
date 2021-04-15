@@ -37,7 +37,7 @@ class UI {
             <td>${book.title}</td>
             <td>${book.author}</td>
             <td>${book.isbn}</td>
-            <td><a hreg="#" class="btn btn-danger btn-sm delete>x</a></td>
+            <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
 
         list.appendChild(row);
@@ -47,8 +47,17 @@ class UI {
 // Store Class: Handles Storage
 
 // Event: Display Books
+document.addEventListener('DOMContentLoaded', UI.displayBooks)
 
 // Event: Add a Book
+document.querySelector('#book-form').addEventListener('submit', (e) => {
+    // Get form values
+    const title = document.querySelector('#title').value;
+    const author = document.querySelector('#author').value;
+    const isbn = document.querySelector('#isbn').value;
+
+    
+})
 
 // Event: Remove a Book
 
